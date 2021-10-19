@@ -1,5 +1,5 @@
 # Usage
-The repository TreeToCongruency provides a R script called TreeToCongruency.R to compare two trees through a tanglegram and estimations of congruency metrics (Robinson-Foulds indexes, Fowlkes-Mallows indexes and Cophenetic correlations).
+The repository TreeToCongruency provides a R script called TreeToCongruency.R to compare two Newick trees through a tanglegram and estimations of congruency metrics (Robinson-Foulds indexes, Fowlkes-Mallows indexes and Cophenetic correlations).
 # Dependencies
 The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
 - library(ape)
