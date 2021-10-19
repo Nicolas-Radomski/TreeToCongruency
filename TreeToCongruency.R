@@ -6,7 +6,7 @@ rm(list=ls())
 # get arguments
 args = commandArgs(trailingOnly=TRUE)
 
-# test if there is two argument: if not, return an error
+# test if there are two argument: if not, return an error
 if (length(args)!=2) {
   stop("USAGE: Rscript 20211020-nwk-input.R tree1.nwk tree2.nwk", call.=FALSE)
 }
@@ -117,7 +117,7 @@ write.table(RF_indexes, file = file.path(output_path,"FM-indexes.txt"), sep = "\
 
 # estimate the Cophenetic correlations (dendextend)
 # probability (between 0 and 1) assessing how a dendrogram preserves (p closes to 1) the pairwise distances between the original unmodeled data points
-## concatenate "robinson-foulds =" and RF.dist output
+## concatenate "cophenetic-correlation =" and RF.dist output
 CC_pearson <- print(paste("cophenetic-correlation-person =", cor_cophenetic(dnd1, dnd2, method_coef = "pearson"),sep=" "))
 CC_kendall <- print(paste("cophenetic-correlation-kendall =", cor_cophenetic(dnd1, dnd2, method_coef = "kendall"),sep=" "))
 CC_spearman <- print(paste("cophenetic-correlation-spearman =", cor_cophenetic(dnd1, dnd2, method_coef = "spearman"),sep=" "))
