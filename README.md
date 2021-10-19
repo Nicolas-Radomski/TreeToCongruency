@@ -39,7 +39,27 @@ sudo apt-get install r-base
 ```
 R --version
 ```
-# Usage
+# Launch the script
+## 1/ Unpack the GitHub repository and move inside
+```
+git clone https://github.com/Nicolas-Radomski/TreeToCongruency.git
+cd TreeToCongruency
+```
+## 2/ Install dependencies
+```
+R
+install.packages("ape")
+install.packages("ggplot2")
+install.packages("maps")
+install.packages("phytools")
+install.packages("viridis")
+install.packages("dplyr")
+install.packages("phylogram")
+install.packages("phangorn")
+install.packages("dendextend")
+quit()
+```
+## 3/ Launch the R script
 ```
 Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
