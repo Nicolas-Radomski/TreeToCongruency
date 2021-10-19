@@ -39,7 +39,7 @@ sudo apt-get install r-base
 ```
 R --version
 ```
-# Launch the script
+# Install dependencies and launch the R script
 ## 1/ Unpack the GitHub repository and move inside
 ```
 git clone https://github.com/Nicolas-Radomski/TreeToCongruency.git
