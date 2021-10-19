@@ -14,11 +14,11 @@ The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
 # Install R from configured sources (Ubuntu 20.04)
 ```
 sudo apt update
-sudo apt -y install r-base
+sudo apt install r-base
 R --version
 ```
 # Update R
-## 1/ Check current R version
+## 1/ Check the current R version
 ```
 R --version
 ```
@@ -27,15 +27,15 @@ R --version
 sudo apt-get update
 sudo apt-get upgrade
 ```
-## 3/ Check available last recent R version
+## 3/ Check the available lastest R version
 ```
 sudo apt-cache showpkg r-base
 ```
-## 4/ Update R
+## 4/ Update the lastest R version
 ```
 sudo apt-get install r-base
 ```
-## 5/ Check updated R version
+## 5/ Check the updated R version
 ```
 R --version
 ```
