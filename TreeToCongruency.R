@@ -8,7 +8,7 @@ args = commandArgs(trailingOnly=TRUE)
 
 # test if there are two argument: if not, return an error
 if (length(args)!=2) {
-  stop("USAGE: Rscript 20211020-nwk-input.R tree1.nwk tree2.nwk", call.=FALSE)
+  stop("USAGE: Rscript TreeToCongruency.R tree1.nwk tree2.nwk", call.=FALSE)
 }
 
 # skip lines related to installation of libraries because there are supposed to be already installed
