@@ -63,6 +63,12 @@ quit()
 ```
 Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
+# Expected output files
+- figures of pairwise trees (tanglegram.pdf and tanglegram.tiff)
+- estimation of the Robinson-Foulds distance (RF.txt)
+- estimation of the Robinson-Foulds indexes (FM-indexes.txt)
+- estimation of the Fowlkes-Mallows indexes (RF-indexes.txt)
+- estimate the Cophenetic correlations (CC-kendall.txt, CC-person.txt and CC-spearman.txt)
 # Illustration
 ![PCA figure](https://github.com/Nicolas-Radomski/TreeToCongruency/blob/main/illustration.png)
 # Reference
