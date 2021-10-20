@@ -95,11 +95,12 @@ file.remove("Rplots.pdf")
 RF <- print(paste("robinson-foulds =", RF.dist(tree1,tree2),sep=" "))
 ## save the RF distance in a txt file inside the output directory
 write.table(RF, file = file.path(output_path,"RF.txt"), sep = "\t", row.names = TRUE, col.names = FALSE)
+
 # estimate the Robinson-Foulds indexes (phangorn)
-# symmetric difference (i.e. Robinson-Foulds distance)
-# branch score difference
-# path difference
-# weighted path difference
+# - symmetric difference (i.e. Robinson-Foulds distance)
+# - branch score difference
+# - path difference
+# - weighted path difference
 ## calculate the Robinson-Foulds indexes
 RF_indexes <- treedist(tree1,tree2)
 ## save the RF_indexes in a txt file inside the output directory
