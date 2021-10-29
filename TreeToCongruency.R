@@ -31,7 +31,8 @@ args = commandArgs(trailingOnly=TRUE)
 # test if there are two arguments: if not, return an error
 if (length(args)!=2) {
   stop("Please, provide two Newick files\n
-       USAGE: Rscript TreeToCongruency tree1.nwk tree2.nwk", call.=FALSE)
+       USAGE: Rscript TreeToCongruency tree1.nwk tree2.nwk
+       USAGE: Rscript TreeToCongruency TREE1.nwk TREE2.nwk", call.=FALSE)
 }
 
 # read input arguments (ape)
