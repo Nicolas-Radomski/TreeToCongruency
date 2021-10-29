@@ -52,12 +52,12 @@ dnd2 <- as.dendrogram(tree2)
 # plot a tanglegram with color for common nodes
 
 ## open a pdf file in the output directory, plot tanglegram and close the file
-pdf(file = "tanglegram.pdf")
+pdf(file = "Tanglegram.pdf")
 dendextend::tanglegram(dnd1,dnd2, margin_inner = 8, lab.cex = 0.9,lwd = 2,common_subtrees_color_branches = TRUE)
 dev.off()
 
 ## open a tiff file in the output directory, plot tanglegram and close the file
-tiff(filename = "tanglegram.tiff", width = 1200, height = 900, units = "px", pointsize = 30, compression = "lzw")
+tiff(filename = "Tanglegram.tiff", width = 1200, height = 900, units = "px", pointsize = 30, compression = "lzw")
 dendextend::tanglegram(dnd1,dnd2, margin_inner = 8, lab.cex = 0.9,lwd = 2,common_subtrees_color_branches = TRUE)
 dev.off()
 
