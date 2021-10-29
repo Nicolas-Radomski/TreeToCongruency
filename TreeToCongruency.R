@@ -62,8 +62,8 @@ dendextend::tanglegram(dnd1,dnd2, margin_inner = 8, lab.cex = 0.9,lwd = 2,common
 dev.off()
 
 # estimate several metrics
-## create congruency_metrics.txt where metrics will be saved
-sink("congruency_metrics.txt")
+## create CongruencyMetrics.txt where metrics will be saved
+sink("CongruencyMetrics.txt")
 
 ## print working directory path
 cat("Working directory path:",getwd(),"\n")

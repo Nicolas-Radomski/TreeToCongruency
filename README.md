@@ -65,7 +65,7 @@ Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 # Expected figures of paired-trees
 - tanglegram.pdf
 - tanglegram.tiff
-# Expected congruency metrics in a file called congruency_metrics.txt
+# Expected congruency metrics in a CongruencyMetrics.txt file
 - Cophenetic correlation with Pearson method
 - Cophenetic correlation with Kendall method
 - Cophenetic correlation with Spearman method
