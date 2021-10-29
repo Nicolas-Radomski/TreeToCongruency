@@ -1,16 +1,14 @@
 # Usage
-The repository TreeToCongruency provides a R script called TreeToCongruency.R to compare two Newick trees through a tanglegram and estimations of congruency metrics (Robinson-Foulds indexes, Fowlkes-Mallows indexes and Cophenetic correlations).
+The repository TreeToCongruency provides a R script called TreeToCongruency.R to compare two Newick trees through a tanglegram and estimations of congruency metrics (Cophenetic correlations, Robinson-Foulds index, tree distances and Fowlkes-Mallows index).
 # Dependencies
 The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
-- library(ape)
-- library(ggplot2)
-- library(maps)
-- library(phytools)
-- library(viridis)
 - library(dplyr)
+- library(ape)
+- library(phytools)
+- library(dendextend)
+- library(viridis)
 - library(phylogram)
 - library(phangorn)
-- library(dendextend)
 # Install R from configured sources (Ubuntu 20.04)
 ```
 sudo apt update
@@ -48,27 +46,35 @@ cd TreeToCongruency
 ## 2/ Install dependencies
 ```
 R
-install.packages("ape")
-install.packages("ggplot2")
-install.packages("maps")
-install.packages("phytools")
-install.packages("viridis")
 install.packages("dplyr")
+install.packages("ape")
+install.packages("phytools")
+install.packages("dendextend")
+install.packages("viridis")
 install.packages("phylogram")
 install.packages("phangorn")
-install.packages("dendextend")
 quit()
 ```
-## 3/ Launch the R script
+## 3/ Launch the R script with different paired-trees
 ```
 Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
+```
+Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
+```
 # Expected output files
-- figures of pairwise trees (tanglegram.pdf and tanglegram.tiff)
-- estimation of the Robinson-Foulds distance (RF.txt)
-- estimation of the Robinson-Foulds indexes (FM-indexes.txt)
-- estimation of the Fowlkes-Mallows indexes (RF-indexes.txt)
-- estimate the Cophenetic correlations (CC-kendall.txt, CC-person.txt and CC-spearman.txt)
+Figures of pairwise trees:
+- tanglegram.pdf
+- tanglegram.tiff
+Congruency metrics
+- Cophenetic correlation with Pearson method
+- Cophenetic correlation with Kendall method
+- Cophenetic correlation with Spearman method
+- Robinson-Foulds distance
+- Branch score difference
+- Path difference
+- Quadratic path difference
+- Fowlkes-Mallows index
 # Illustration
 ![PCA figure](https://github.com/Nicolas-Radomski/TreeToCongruency/blob/main/illustration.png)
 # Reference
