@@ -101,7 +101,7 @@ cat("Quadratic path difference:",rfm[4],"\n")
 fmi <- cor_FM_index(dnd1,dnd2,k=25)
 cat("Fowlkes-Mallows index:",fmi[1])
 
-### close correlation_metrics.txt
+### close CongruencyMetrics.txt
 sink()
 
 # add message
