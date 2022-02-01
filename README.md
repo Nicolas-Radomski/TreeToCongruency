@@ -62,8 +62,8 @@ Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
 Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 ```
-# Launch the from Docker image
-## 1/ Pull the Docker image from Docker Hub (https://hub.docker.com/r/nicolasradomski/treetocongruency)
+# Launch the R script from the Docker image
+## 1/ Pull the Docker image from Docker Hub
 ```
 docker pull nicolasradomski/treetocongruency
 ```
@@ -91,6 +91,7 @@ sudo docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output 
 # Reference
 - First version: Henri C., P. Leekitcharoenphon, H.A. Carleton, N. Radomski, R. S. Kaas, J. F. Mariet, A. Felten, F. M. Aarestrup, P. G. Smidt, S. Roussel, L. Guillier, M.Y. Mistou and R.S. Hendriksen. An assessment of different genomic approaches for inferring phylogeny of Listeria monocytogenes. 2017, Frontiers Microbiology, 8(2351): 1-13, doi.org/10.3389/fmicb.2017.02351
 - Second version: Vila Nova M, Durimel K., La K., Felten A., Bessières P., Mistou M.Y., Mariadassou M. and N. Radomski. Genetic and metabolic signatures of Salmonella enterica subsp. enterica associated with animal sources at the pangenomic scale. 2019, BMC Genomics, 20(1): 814, doi: 10.1186/s12864-019-6188-x
+- Docker Hub: https://hub.docker.com/r/nicolasradomski/treetocongruency
 # Acknowledgment
 My colleague Antonio Rinaldi for our fruitful exchanges about Rscript
 # Author
