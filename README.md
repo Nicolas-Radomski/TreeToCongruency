@@ -62,6 +62,18 @@ Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
 Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 ```
+# Launch the from Docker image
+## 1/ Pull the Docker image from Docker Hub (https://hub.docker.com/r/nicolasradomski/treetocongruency)
+```
+docker pull nicolasradomski/treetocongruency
+```
+## 2/ Launch the R script from the Docker image with different paired-trees
+```
+docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output nicolasradomski/treetocongruency:latest sh -c 'Rscript code/TreeToCongruency.R data/tree1.nwk data/tree2.nwk' > output/std.log 2>&1
+```
+```
+sudo docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output nicolasradomski/treetocongruency:latest sh -c 'Rscript code/TreeToCongruency.R data/TREE1.nwk data/TREE2.nwk' > output/std.log 2>&1
+```
 # Expected figures of paired-trees
 - Tanglegram.pdf
 - Tanglegram.tiff
