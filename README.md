@@ -95,4 +95,4 @@ sudo docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output 
 # Acknowledgment
 My colleague Antonio Rinaldi for our fruitful exchanges about Rscript
 # Author
-Nicolas Radomski
+Antonio Rinaldi and Nicolas Radomski
