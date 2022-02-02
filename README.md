@@ -43,7 +43,7 @@ R --version
 git clone https://github.com/Nicolas-Radomski/TreeToCongruency.git
 cd TreeToCongruency
 ```
-## 2/ Install dependencies
+## 2/ Install R dependencies
 ```
 R
 install.packages("dplyr")
@@ -55,7 +55,7 @@ install.packages("phylogram")
 install.packages("phangorn")
 quit()
 ```
-## 3/ Launch the R script with different paired-trees
+## 3/ Launch with Rscript and different paired-trees
 ```
 Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
@@ -67,7 +67,7 @@ Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 ```
 docker pull nicolasradomski/treetocongruency
 ```
-## 2/ Launch the Docker image with different paired-trees
+## 2/ Launch with Docker and different paired-trees
 ```
 docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output nicolasradomski/treetocongruency:latest sh -c 'Rscript code/TreeToCongruency.R data/tree1.nwk data/tree2.nwk' > output/std.log 2>&1
 ```
