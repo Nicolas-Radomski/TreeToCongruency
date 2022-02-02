@@ -15,25 +15,25 @@ The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
 sudo apt-get update
 sudo apt-get upgrade
 ```
-## 2/ Check the available updated R version
+## 2/ Check available updated R version
 ```
 sudo apt-cache showpkg r-base
 ```
-## 3/ Install the updated R version
+## 3/ Install updated R version
 ```
 sudo apt-get install r-base
 ```
-## 4/ Check the installed R version
+## 4/ Check installed R version
 ```
 R --version
 ```
 # Install R dependencies and launch with Rscript
-## 1/ Unpack the GitHub repository and move inside
+## 1/ Unpack GitHub repository and move inside
 ```
 git clone https://github.com/Nicolas-Radomski/TreeToCongruency.git
 cd TreeToCongruency
 ```
-## 2/ Install R dependencies
+## 2/ Install R libraries
 ```
 R
 install.packages("dplyr")
@@ -52,8 +52,8 @@ Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
 Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 ```
-# Install the Docker image and launch with Docker
-## 1/ Pull the Docker image from Docker Hub
+# Install Docker image and launch with Docker
+## 1/ Pull Docker image from Docker Hub
 ```
 docker pull nicolasradomski/treetocongruency
 ```
