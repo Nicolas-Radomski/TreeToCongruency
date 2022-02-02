@@ -62,7 +62,7 @@ Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
 Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 ```
-# Launch the R script from the Docker image
+# Install the Docker image and launch the R script
 ## 1/ Pull the Docker image from Docker Hub
 ```
 docker pull nicolasradomski/treetocongruency
