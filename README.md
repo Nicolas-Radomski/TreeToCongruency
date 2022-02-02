@@ -15,7 +15,7 @@ The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
 sudo apt-get update
 sudo apt-get upgrade
 ```
-## 2/ Check the available lastest R version
+## 2/ Check the available updated R version
 ```
 sudo apt-cache showpkg r-base
 ```
