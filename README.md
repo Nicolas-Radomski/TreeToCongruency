@@ -37,7 +37,7 @@ sudo apt-get install r-base
 ```
 R --version
 ```
-# Install dependencies and launch the R script
+# Install dependencies and launch with Rscript
 ## 1/ Unpack the GitHub repository and move inside
 ```
 git clone https://github.com/Nicolas-Radomski/TreeToCongruency.git
@@ -62,7 +62,7 @@ Rscript TreeToCongruency.R tree1.nwk tree2.nwk
 ```
 Rscript TreeToCongruency.R TREE1.nwk TREE2.nwk
 ```
-# Install the Docker image and launch the R script
+# Install the Docker image and launch with Docker
 ## 1/ Pull the Docker image from Docker Hub
 ```
 docker pull nicolasradomski/treetocongruency
