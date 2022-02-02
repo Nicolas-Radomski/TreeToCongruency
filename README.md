@@ -9,31 +9,21 @@ The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
 - library(viridis)
 - library(phylogram)
 - library(phangorn)
-# Install R from configured sources (Ubuntu 20.04)
-```
-sudo apt update
-sudo apt install r-base
-R --version
-```
-# Update R
-## 1/ Check the current R version
-```
-R --version
-```
-## 2/ Update and upgrade apt-get
+# Install R (Ubuntu 20.04)
+## 1/ Update and upgrade apt-get
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
-## 3/ Check the available lastest R version
+## 2/ Check the available lastest R version
 ```
 sudo apt-cache showpkg r-base
 ```
-## 4/ Update the lastest R version
+## 3/ Install the updated R version
 ```
 sudo apt-get install r-base
 ```
-## 5/ Check the updated R version
+## 4/ Check the installed R version
 ```
 R --version
 ```
@@ -74,10 +64,11 @@ docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output nicol
 ```
 sudo docker run --name nicolas --rm -v /home/data:/data -v /home/output:/output nicolasradomski/treetocongruency:latest sh -c 'Rscript code/TreeToCongruency.R data/TREE1.nwk data/TREE2.nwk' > output/std.log 2>&1
 ```
-# Expected figures of paired-trees
+# Expected output
+## 1/ Figures of paired-trees in Tanglegram files
 - Tanglegram.pdf
 - Tanglegram.tiff
-# Expected congruency metrics in a CongruencyMetrics.txt file
+## 2/ Congruency metrics in a CongruencyMetrics.txt file
 - Cophenetic correlation with Pearson method
 - Cophenetic correlation with Kendall method
 - Cophenetic correlation with Spearman method
