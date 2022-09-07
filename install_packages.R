@@ -1,0 +1,7 @@
+install.packages("dplyr")
+install.packages("ape")
+install.packages("phytools")
+install.packages("dendextend")
+install.packages("viridis")
+install.packages("phylogram")
+install.packages("phangorn")
