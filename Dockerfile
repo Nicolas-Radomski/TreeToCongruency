@@ -1,3 +1,6 @@
+# replace lines into the TreeToCongruency.R Rscript
+## pdf(file = "Tanglegram.pdf") by pdf(file = "output/Tanglegram.pdf")
+## sink("CongruencyMetrics.txt") by sink("output/CongruencyMetrics.txt")
 # Base image https://hub.docker.com/u/rocker/
 FROM rocker/r-base:latest
 # create directories
