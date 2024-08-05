@@ -40,7 +40,7 @@ The 4.3.2 users need to install the libglpk-dev Ubuntu library to be able to ins
 ```
 sudo apt-get update && sudo apt-get -y install libglpk-dev
 ```
-Then, the needed R libraries.
+Then, install the needed R libraries.
 ```
 R
 install.packages("dplyr")
