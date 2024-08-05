@@ -8,10 +8,11 @@ skip_instalation <- scan(what="character")
 # install libraries
 install.packages("dplyr")
 install.packages("ape")
-install.packages("phytools")
 install.packages("dendextend")
 install.packages("viridis")
 install.packages("phylogram")
+install.packages("igraph")
+install.packages("phytools")
 install.packages("phangorn")
 
 rm(skip_instalation)
@@ -19,10 +20,11 @@ rm(skip_instalation)
 # load packages avoiding warning messages
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(ape))
-suppressPackageStartupMessages(library(phytools))
 suppressPackageStartupMessages(library(dendextend))
 suppressPackageStartupMessages(library(viridis))
 suppressPackageStartupMessages(library(phylogram))
+suppressPackageStartupMessages(library(igraph))
+suppressPackageStartupMessages(library(phytools))
 suppressPackageStartupMessages(library(phangorn))
 
 # get arguments
