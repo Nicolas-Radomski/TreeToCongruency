@@ -38,7 +38,8 @@ cd TreeToCongruency
 
 The 4.3.2 users need to install the libglpk-dev Ubuntu library to be able to install properly the igraph R library.
 ```
-sudo apt-get update && sudo apt-get -y install libglpk-dev
+sudo apt-get update
+sudo apt-get -y install libglpk-dev
 ```
 Then, install the needed R libraries.
 ```
