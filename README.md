@@ -10,6 +10,7 @@ The R script TreeToCongruency.R was prepared and tested with R version 3.6.3.
 - library(igraph)
 - library(phytools)
 - library(phangorn)
+
 NB: The 4.3.2 users need to install the libglpk-dev Ubuntu library to be able to install properly the igraph R library (sudo apt-get update && sudo apt-get -y install libglpk-dev)
 # Install R (Ubuntu 20.04)
 ## 1/ Update and upgrade apt-get
